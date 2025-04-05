@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+    --main-font-family:"Montserrat", serif;
+}
+body,html{
+    font-family: "Montserrat", serif;
+}

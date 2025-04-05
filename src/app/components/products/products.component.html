@@ -1,0 +1,21 @@
+<section class="bg-slate-200 py-14 ">
+<h1 class="text-center mx-auto  border-4 rounded-xl border-orange-400 w-fit p-3 mb-5">All Product</h1>
+<div class=" w-3/4 mx-auto  text-center">
+    <div class="content grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 leading-7 cursor-pointer">
+       @for (prod of allProducts ; track prod.id) {
+        <div class="card border border-orange-400 rounded-md overflow-hidden shadow relative" [routerLink]="['/details' ,prod.id ]" >
+            <div class="image p-3  ">
+                <img [src]="prod.image" [alt]="prod.title" class="w-full rounded h-[250px] object-contain">
+            </div>
+            <div class="image-content px-2 py-4">
+                <h3 class="font-medium text-l text-orange-400">{{prod.title}}</h3>
+                <h2>{{prod.price}} EGB </h2>
+                <p>{{prod.description.split('' , 20).join('')}}...</p>
+
+            </div>
+        </div>
+       }
+
+    </div>
+</div>
+</section>

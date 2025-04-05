@@ -1,0 +1,17 @@
+@if (detailsProduct) {
+    <section class="bg-slate-200 py-14 h-screen ">
+        <div class=" w-3/4 mx-auto  text-center">
+            
+                <div class="image p-3  ">
+                    <img [src]="detailsProduct.image" [alt]="detailsProduct.title" class="w-full rounded h-[250px] object-contain">
+                </div>
+                <div class="image-content px-2 py-4">
+                    <h4 class=" text-xl uppercase text-stone-500">{{detailsProduct.category}}</h4>
+                    <h3 class="font-medium text-2xl text-orange-400 ">{{detailsProduct.title}}</h3>
+                    <h2>{{detailsProduct.price}} EGB </h2>
+                    <p>{{detailsProduct.description}}</p>
+    
+                </div>
+        </div>
+    </section>
+}
